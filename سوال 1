@@ -1,9 +1,17 @@
-#C 1
-
-{int a،b،i؛
- a=int.parse(Console.ReadLine())؛
- b=int.parse(Console.ReadLine())؛
- for(i=a+1؛i<=b-1؛i++)
-   {if(1٪5==0)
-   Console.WriteLine(i)؛}
- Console.ReadLine()؛}
+C# →{ int y, m, d, r, r1, r2;
+y = int.Parse(Console.ReadLine());
+m = int.Parse(Console.ReadLine());
+d = int.Parse(Console.ReadLine());
+r 1= (1404 - y-1) * 365;
+if (m < 6)
+    r 2= 365 - ((m - 1) * 31) + d;
+else
+    r 2= 365 - ((186 - (m - 7)) * 30) + d;
+r = r1+ r2;
+Console.WriteLine(r);
+y = r / 365;
+m = (r % 365) / 30;
+d = ((r % 365) % 30);
+Console.WriteLine("y + " " + m + " " + "d);
+Console.ReadLine();
+}
